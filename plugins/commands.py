@@ -53,9 +53,11 @@ async def start(client, message):
             InlineKeyboardButton('↖️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ↗️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],
             InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
-            ],[
+            ],
+	    [
             InlineKeyboardButton('⪦ ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/Netflix_Dramas')
-            ],[
+            ],
+	    [
                 InlineKeyboardButton(
                     "🦋 SUBSCRIBE YT Channel 🦋", url='https://youtube.com/@xtrontrade'
                 )
