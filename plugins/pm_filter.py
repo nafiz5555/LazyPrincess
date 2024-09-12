@@ -2336,7 +2336,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+            return await query.answer('♥️ Thank You CineDrama ♥️')
         
         if set_type == 'url_mode' and query.from_user.id not in ADMINS:
             return await query.answer(text=f"Hey {query.from_user.first_name}, You can't change shortlink settings for your group !\n\nIt's an admin only setting !", show_alert=True)
@@ -2393,7 +2393,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('♥️ Thank You LazyDeveloper ♥️')
+    await query.answer('♥️ Thank You CineDrama ♥️')
 
 
 async def auto_filter(client, msg, spoll=False):
