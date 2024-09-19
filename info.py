@@ -64,7 +64,7 @@ BINANCE_ID = environ.get('BINANCE_ID', '201658396') #enter your upi id here - gr
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/real_MoviesAdda3/186') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CineBaazar')
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
+P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Cine Drama™](https://t.me/cinedramabot)</b>⚡\n\n📂<b>File Name:</b> ⪧ {file_caption} \n <b>Size: </b>{file_size}\n\n❤")
@@ -91,7 +91,7 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LayDeveloperr')  # WITHOUT @ [  a
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+tl1Ll8L8TbQwMjdl") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","True")), False) # make it true to enable url shortner in groups or pm
+URL_MODE = is_enabled((environ.get("URL_MODE","False")), False) # make it true to enable url shortner in groups or pm
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'atglinks.com') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '72a7f0131e5e657e37cf7e2a9e928a616b671cf5')
 lazy_groups = environ.get('LAZY_GROUPS','')
@@ -165,7 +165,7 @@ if SELF_DELETE == "True":
     SELF_DELETE = True
 
 DISCUSSION_TITLE = "Click Here"
-DISCUSSION_CHAT_USRNM = "Discusss_Here" #without @
+DISCUSSION_CHAT_USRNM = "soulofdrama" #without @
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
