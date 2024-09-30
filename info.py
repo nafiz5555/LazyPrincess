@@ -41,8 +41,8 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information *
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "LazyDeveloper")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
 # LOG CHANNELS *
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
@@ -61,15 +61,15 @@ QR_CODE_IMG = environ.get('QR_CODE_IMG','https://telegra.ph/file/ca18e2c794f4ea1
 BINANCE_ID = environ.get('BINANCE_ID', '201658396') #enter your upi id here - grab it from your online payment methods.
 
 # Others
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/real_MoviesAdda3/186') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/cinedrama') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CineBaazar')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CineDramaGroup')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Cine Drama™](https://t.me/cinedramabot)</b>⚡\n\n📂<b>File Name:</b> ⪧ {file_caption} \n <b>Size: </b>{file_size}\n\n❤")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌🎁Support: @soulofdrama 🎁\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌🎁Support: @CineDramaGroup 🎁\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -130,7 +130,7 @@ if HAS_SSL:
 else:
     URL = "http://{}/".format(FQDN)
 BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001987654567")).split())) 
-OWNER_USERNAME = "LazyDeveloper"
+OWNER_USERNAME = "nafiz555"
 
 lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) else lazydownloaders for lazydownloaders in environ.get('PRIME_DOWNLOADERS', '').split()]
 PRIME_DOWNLOADERS = (lazydownloaders) if lazydownloaders else []
@@ -165,7 +165,7 @@ if SELF_DELETE == "True":
     SELF_DELETE = True
 
 DISCUSSION_TITLE = "Click Here"
-DISCUSSION_CHAT_USRNM = "soulofdrama" #without @
+DISCUSSION_CHAT_USRNM = "cinedramagroup" #without @
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
